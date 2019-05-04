@@ -62,9 +62,9 @@ namespace Granbluefantasy_RaidFinder
             {
                 checkedListBox1.Items.Add("Lv." + master.Array[i].Level +" "+ master.Array[i].Name_ja);
             }
-            checkedListBox1.Items.Add("Lv.50 イベントエネミー");
-            checkedListBox1.Items.Add("Lv.60 イベントエネミー");
-            checkedListBox1.Items.Add("Lv.100 イベントエネミー");
+            //checkedListBox1.Items.Add("Lv.50 イベントエネミー");
+            //checkedListBox1.Items.Add("Lv.60 イベントエネミー");
+            //checkedListBox1.Items.Add("Lv.100 イベントエネミー");
             itemcount = (checkedListBox1.Items.Count);
 
             MessageBox.Show("起動処理完了", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -131,11 +131,45 @@ namespace Granbluefantasy_RaidFinder
                 parsecnt = twitext.IndexOf("参加者募集！");
                 ReceivedEnemy.Level = twitext.Substring(parsecnt + 9, 2);
 
-                if (Convert.ToInt32(ReceivedEnemy.Level) >= 10 &&
-                    Convert.ToInt32(ReceivedEnemy.Level) <= 20)
+                if (ReceivedEnemy.Level.Contains("四") != true &&
+                    ReceivedEnemy.Level.Contains("大") != true &&
+                    ReceivedEnemy.Level.Contains("天") != true &&
+                    ReceivedEnemy.Level.Contains("司") != true &&
+                    ReceivedEnemy.Level.Contains("黒") != true &&
+                    ReceivedEnemy.Level.Contains("麒") != true &&
+                    ReceivedEnemy.Level.Contains("麟") != true &&
+                    ReceivedEnemy.Level.Contains("・") != true &&
+                    ReceivedEnemy.Level.Contains("黄") != true &&
+                    ReceivedEnemy.Level.Contains("龍") != true )
                 {
-                    ReceivedEnemy.Level += "0";
+                    if (Convert.ToInt32(ReceivedEnemy.Level) >= 10 &&
+                        Convert.ToInt32(ReceivedEnemy.Level) <= 20)
+                    {
+                        ReceivedEnemy.Level += "0";
+                    }
                 }
+                else
+                {
+                    if (ReceivedEnemy.Level.Contains("天") ||
+                        ReceivedEnemy.Level.Contains("司") ||
+                        ReceivedEnemy.Level.Contains("大") ||
+                        ReceivedEnemy.Level.Contains("四"))
+                    {
+                        Console.WriteLine("四大天司はクソ");
+                        ReceivedEnemy.Level = "200";
+                    }
+                    else if (ReceivedEnemy.Level.Contains("黒") ||
+                             ReceivedEnemy.Level.Contains("黄") ||
+                             ReceivedEnemy.Level.Contains("龍") ||
+                             ReceivedEnemy.Level.Contains("・") ||
+                             ReceivedEnemy.Level.Contains("麒") ||
+                             ReceivedEnemy.Level.Contains("麟"))
+                    {
+                        Console.WriteLine("黄龍黒麒麟はクソ");
+                        ReceivedEnemy.Level = "200";
+                    }
+                }
+
 
                 if (Convert.ToInt32(ReceivedEnemy.Level) > 99)
                 {
@@ -155,44 +189,51 @@ namespace Granbluefantasy_RaidFinder
             }
             else if (twitext.Contains("I need backup!") == true)
             {
-                LanguageParam = false;
-                parsecnt = twitext.IndexOf("Battle");
-                parsecnt -= 2;
-                ReceivedEnemy.ID = twitext.Remove(parsecnt);
-                if (ReceivedEnemy.ID.Count() > 8)
+                try
                 {
-                    ReceivedEnemy.Comment = ReceivedEnemy.ID.Remove(ReceivedEnemy.ID.Count() - 8);
-                    ReceivedEnemy.ID = ReceivedEnemy.ID.Substring(ReceivedEnemy.ID.Count() - 8);
-                }
-                else
-                {
-                    ReceivedEnemy.Comment = null;
-                }
+                    LanguageParam = false;
+                    parsecnt = twitext.IndexOf("Battle");
+                    parsecnt -= 2;
+                    ReceivedEnemy.ID = twitext.Remove(parsecnt);
+                    if (ReceivedEnemy.ID.Count() > 8)
+                    {
+                        ReceivedEnemy.Comment = ReceivedEnemy.ID.Remove(ReceivedEnemy.ID.Count() - 8);
+                        ReceivedEnemy.ID = ReceivedEnemy.ID.Substring(ReceivedEnemy.ID.Count() - 8);
+                    }
+                    else
+                    {
+                        ReceivedEnemy.Comment = null;
+                    }
 
-                parsecnt = twitext.IndexOf("Lvl");
-                ReceivedEnemy.Level = twitext.Substring(parsecnt + 4, 2);
+                    parsecnt = twitext.IndexOf("Lvl");
+                    ReceivedEnemy.Level = twitext.Substring(parsecnt + 4, 2);
 
-                if (Convert.ToInt32(ReceivedEnemy.Level) >= 10 &&
-                    Convert.ToInt32(ReceivedEnemy.Level) <= 20)
-                {
-                    ReceivedEnemy.Level += "0";
-                }
+                    if (Convert.ToInt32(ReceivedEnemy.Level) >= 10 &&
+                        Convert.ToInt32(ReceivedEnemy.Level) <= 20)
+                    {
+                        ReceivedEnemy.Level += "0";
+                    }
 
-                if (Convert.ToInt32(ReceivedEnemy.Level) > 99)
-                {
-                    ReceivedName = twitext.Substring(parsecnt + 8);
-                }
-                else
-                {
-                    ReceivedName = twitext.Substring(parsecnt + 7);
-                }
+                    if (Convert.ToInt32(ReceivedEnemy.Level) > 99)
+                    {
+                        ReceivedName = twitext.Substring(parsecnt + 8);
+                    }
+                    else
+                    {
+                        ReceivedName = twitext.Substring(parsecnt + 7);
+                    }
 
-                if ((twitext.IndexOf("https://")) > 1)
-                {
-                    parsecnt = ReceivedName.Count();
-                    ReceivedName = ReceivedName.Remove(parsecnt - 24);
+                    if ((twitext.IndexOf("https://")) > 1)
+                    {
+                        parsecnt = ReceivedName.Count();
+                        ReceivedName = ReceivedName.Remove(parsecnt - 24);
+                    }
+                    ReceivedEnemy.Name_en = ReceivedName;
                 }
-                ReceivedEnemy.Name_en = ReceivedName;
+                catch (Exception e)
+                {
+
+                }
             }
 
             level = ReceivedEnemy.Level;
@@ -339,7 +380,13 @@ namespace Granbluefantasy_RaidFinder
                 });
             }
             
-        }        
+        }
+
+        private void BackgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            MessageBox.Show("エラーか何かで検索が止まりました。\n再度開始ボタンを押下してください。");
+            SearchStart.Enabled = true;
+        }
     }
 
 }
