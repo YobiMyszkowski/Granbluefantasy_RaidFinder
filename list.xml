@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Granbluefantasy RaidFinder Enemy master xml-->
+<EnemyCollection>
+<enemys>
+  <!--マグナ6属性-->
+  <enemy>
+    <name_ja>ティアマト・マグナ</name_ja>
+    <name_en>Tiamat Omega</name_en>
+    <level>50</level>
+  </enemy>
+  <enemy>
+    <name_ja>リヴァイアサン・マグナ</name_ja>
+    <name_en>Leviathan Omega</name_en>
+    <level>60</level>
+  </enemy>
+  <enemy>
+    <name_ja>ユグドラシル・マグナ</name_ja>
+    <name_en>Yggdrasil Omega</name_en>
+    <level>60</level>
+  </enemy>
+  <enemy>
+    <name_ja>コロッサス・マグナ</name_ja>
+    <name_en>Colossus Omega</name_en>
+    <level>70</level>
+  </enemy>
+  <enemy>
+    <name_ja>シュヴァリエ・マグナ</name_ja>
+    <name_en>Luminiera Omega</name_en>
+    <level>75</level>
+  </enemy>
+  <enemy>
+    <name_ja>セレスト・マグナ</name_ja>
+    <name_en>Celeste Omega</name_en>
+    <level>75</level>
+  </enemy>
+  <!--マグナHL6属性-->
+  <enemy>
+    <name_ja>ティアマト・マグナ＝エア</name_ja>
+    <name_en>Tiamat Omega Ayr</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>ユグドラシル・マグナ</name_ja>
+    <name_en>Yggdrasil Omega</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>リヴァイアサン・マグナ</name_ja>
+    <name_en>Leviathan Omega</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>コロッサス・マグナ</name_ja>
+    <name_en>Colossus Omega</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>シュヴァリエ・マグナ</name_ja>
+    <name_en>Luminiera Omega</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>セレスト・マグナ</name_ja>
+    <name_en>Celeste Omega</name_en>
+    <level>100</level>
+  </enemy>
+  <!--旧石6属性-->
+  <enemy>
+    <name_ja>ナタク</name_ja>
+    <name_en>Nezha</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>フラム＝グラス</name_ja>
+    <name_en>Twin Elements</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>マキュラ・マリウス</name_ja>
+    <name_en>Macula Marius</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>メドゥーサ</name_ja>
+    <name_en>Medusa</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>アポロン</name_ja>
+    <name_en>Apollo</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>Dエンジェル・オリヴィエ</name_ja>
+    <name_en>Dark Angel Olivia</name_en>
+    <level>100</level>
+  </enemy>
+  <!--新石6属性-->
+  <enemy>
+    <name_ja>ガルーダ</name_ja>
+    <name_en>Garuda</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>アテナ</name_ja>
+    <name_en>Athena</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>グラニ</name_ja>
+    <name_en>Grani</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>バアル</name_ja>
+    <name_en>Baal</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>オーディン</name_ja>
+    <name_en>Odin</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>リッチ</name_ja>
+    <name_en>Lich</name_en>
+    <level>100</level>
+  </enemy>
+  <!--天司4属性-->
+  <enemy>
+    <name_ja>ラファエル</name_ja>
+    <name_en>Raphael</name_en>
+    <level>100</level>  
+  </enemy>
+  <enemy>
+    <name_ja>ミカエル</name_ja>
+    <name_en>Michael</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>ガブリエル</name_ja>
+    <name_en>Gabriel</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>ウリエル</name_ja>
+    <name_en>Uriel</name_en>
+    <level>100</level>
+  </enemy>
+  <!--特殊-->
+  <enemy>
+    <name_ja>プロトバハムート</name_ja>
+    <name_en>Proto Bahamut</name_en>
+    <level>100</level>  
+  </enemy>
+  <enemy>
+    <name_ja>ジ・オーダーグランデ</name_ja>
+    <name_en>Grand Order</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>ローズクイーン</name_ja>
+    <name_en>Rose Queen</name_en>
+    <level>110</level>  
+  </enemy>
+  <!--旧石6属性HL-->
+    <enemy>
+    <name_ja>ナタク</name_ja>
+    <name_en>Nezha</name_en>
+    <level>100</level>
+  </enemy>
+  <enemy>
+    <name_ja>フラム＝グラス</name_ja>
+    <name_en>Twin Elements</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>マキュラ・マリウス</name_ja>
+    <name_en>Macula Marius</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>メドゥーサ</name_ja>
+    <name_en>Medusa</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>アポロン</name_ja>
+    <name_en>Apollo</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>Dエンジェル・オリヴィエ</name_ja>
+    <name_en>Dark Angel Olivia</name_en>
+    <level>120</level>
+  </enemy>
+  <!--高級鞄6属性HL-->
+  <enemy>
+    <name_ja>バイヴカハ</name_ja>
+    <name_en>Morrigna</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>プロメテウス</name_ja>
+    <name_en>Prometheus</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>カー・オン</name_ja>
+    <name_en>Ca Ong</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>ギルガメッシュ</name_ja>
+    <name_en>Gilgamesh</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>ヘクトル</name_ja>
+    <name_en>Hector</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>アヌビス</name_ja>
+    <name_en>Anubis</name_en>
+    <level>120</level>
+  </enemy>
+  <!--マグナⅡ6属性-->
+  <enemy>
+    <name_ja>グリームニル</name_ja>
+    <name_en>Grimnir</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>シヴァ</name_ja>
+    <name_en>Shiva</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>エウロペ</name_ja>
+    <name_en>Europa</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>ゴッドガード・ブローディア</name_ja>
+    <name_en>Godsworn Alexiel</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>メタトロン</name_ja>
+    <name_en>Metatron</name_en>
+    <level>120</level>
+  </enemy>
+  <enemy>
+    <name_ja>アバター</name_ja>
+    <name_en>Avatar</name_en>
+    <level>120</level>
+  </enemy>
+  <!--その他-->
+  <enemy>
+    <name_ja>プロトバハムート</name_ja>
+    <name_en>Proto Bahamut</name_en>
+    <level>150</level>
+  </enemy>
+  <enemy>
+    <name_ja>アルティメットバハムート</name_ja>
+    <name_en>Ultimate Bahamut</name_en>
+    <level>150</level>
+  </enemy>
+  <enemy>
+    <name_ja>アルティメットバハムート</name_ja>
+    <name_en>Ultimate Bahamut</name_en>
+    <level>200</level>
+  </enemy>
+  <enemy>
+    <name_ja>アーカーシャ</name_ja>
+    <name_en>Akasha</name_en>
+    <level>200</level>
+  </enemy>
+  <enemy>
+    <name_ja>ルシファー</name_ja>
+    <name_en>Lucilius</name_en>
+    <level>150</level>
+  </enemy>
+  <enemy>
+    <name_ja>ルシファー</name_ja>
+    <name_en>Lucilius</name_en>
+    <level>250</level>
+  </enemy>
+</enemys>
+</EnemyCollection>
