@@ -12,27 +12,31 @@
   <enemy>
     <name_ja>リヴァイアサン・マグナ</name_ja>
     <name_en>Leviathan Omega</name_en>
-    <picture>https://pbs.twimg.com/media/ECidfhoUYAALOsQ.jpg</picture>
+    <picture>https://pbs.twimg.com/media/ECidtNGUwAA0IV-.jpg</picture>
     <level>60</level>
   </enemy>
   <enemy>
     <name_ja>ユグドラシル・マグナ</name_ja>
     <name_en>Yggdrasil Omega</name_en>
+    <picture>https://pbs.twimg.com/media/ECidxwnU8AAO8iw.jpg</picture>
     <level>60</level>
   </enemy>
   <enemy>
     <name_ja>コロッサス・マグナ</name_ja>
     <name_en>Colossus Omega</name_en>
+    <picture>https://pbs.twimg.com/media/ECidn-XU4AEyWSg.jpg</picture>
     <level>70</level>
   </enemy>
   <enemy>
     <name_ja>シュヴァリエ・マグナ</name_ja>
     <name_en>Luminiera Omega</name_en>
+    <picture>https://pbs.twimg.com/media/ECid3AfUIAEBLxT.jpg</picture>
     <level>75</level>
   </enemy>
   <enemy>
     <name_ja>セレスト・マグナ</name_ja>
     <name_en>Celeste Omega</name_en>
+    <picture>https://pbs.twimg.com/media/ECid7K8VUAEH31-.jpg</picture>
     <level>75</level>
   </enemy>
   <!--マグナHL6属性-->
